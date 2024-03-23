@@ -18,22 +18,19 @@
   <meta name="author" content="さやか">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Git-Portable安装与配置前言用过Git的人都知道，在每个linux系统上都自带Git软件。但对于Windows系统就不是这样了。而在国内，使用Git的人不算多数，所以并不是每台Windows系统上都装有Git。如果我们需要临时使用Git，而那台电脑又刚好没有安装Git的话，这就比较麻烦了。你可能会临时装一个Git，但是又苦于无法避免繁琐的安装和配置步骤。还好，我们有更好的解决方法——使用">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Git-Portable安装与配置">
-<meta property="og:url" content="https://blog.ins.run/2024/03/16/Git-Portable-Configure/index.html">
+    <meta property="og:type" content="article">
+<meta property="og:title" content="一个反向代理工具——Nginx-Proxy-Manager">
+<meta property="og:url" content="https://blog.ins.run/2024/03/23/%E4%B8%80%E4%B8%AA%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E5%B7%A5%E5%85%B7%E2%80%94%E2%80%94Nginx-Proxy-Manager/index.html">
 <meta property="og:site_name" content="さやか">
-<meta property="og:description" content="Git-Portable安装与配置前言用过Git的人都知道，在每个linux系统上都自带Git软件。但对于Windows系统就不是这样了。而在国内，使用Git的人不算多数，所以并不是每台Windows系统上都装有Git。如果我们需要临时使用Git，而那台电脑又刚好没有安装Git的话，这就比较麻烦了。你可能会临时装一个Git，但是又苦于无法避免繁琐的安装和配置步骤。还好，我们有更好的解决方法——使用">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-03-16T04:03:40.000Z">
-<meta property="article:modified_time" content="2024-03-22T15:28:03.496Z">
+<meta property="article:published_time" content="2024-03-23T12:10:15.000Z">
+<meta property="article:modified_time" content="2024-03-23T12:10:16.091Z">
 <meta property="article:author" content="さやか">
-<meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Git-Portable安装与配置 - さやか</title>
+  <title>一个反向代理工具——Nginx-Proxy-Manager - さやか</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -199,7 +196,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Git-Portable安装与配置"></span>
+            <span id="subtitle" data-typed-text="一个反向代理工具——Nginx-Proxy-Manager"></span>
           
         </div>
 
@@ -210,8 +207,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-03-16 12:03" pubdate>
-          March 16, 2024 pm
+        <time datetime="2024-03-23 20:10" pubdate>
+          March 23, 2024 pm
         </time>
       </span>
     
@@ -222,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          638 words
+          0 words
         
       </span>
     
@@ -233,7 +230,7 @@
         
         
         
-          6 mins
+          1 mins
         
       </span>
     
@@ -270,27 +267,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Git-Portable安装与配置</h1>
+            <h1 id="seo-header">一个反向代理工具——Nginx-Proxy-Manager</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="Git-Portable安装与配置"><a href="#Git-Portable安装与配置" class="headerlink" title="Git-Portable安装与配置"></a>Git-Portable安装与配置</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>用过Git的人都知道，在每个linux系统上都自带Git软件。但对于Windows系统就不是这样了。而在国内，使用Git的人不算多数，所以并不是每台Windows系统上都装有Git。如果我们需要临时使用Git，而那台电脑又刚好没有安装Git的话，这就比较麻烦了。你可能会临时装一个Git，但是又苦于无法避免繁琐的安装和配置步骤。还好，我们有更好的解决方法——使用便携版的Git，即Git-Portable。</p>
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Git-Portable是针对Windows版Git所设计的一款软件。顾名思义，它就是便携版或移动版的Git。你可以选择将它安装在U盘等便携设备上。它不需要安装，也不会在注册表上留下记录。正因为这样，你也无法像桌面版的Git那样，使用右键“Git Bash here”或者“Git GUI here”。</p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>安装方法十分简单，只要在<a target="_blank" rel="noopener" href="https://git-scm.com/download/win">Git官网</a>将Git-Portable 7z压缩包下载下来，解压到你的U盘上即可。另外我们需要说明的是，这个7z压缩包不需要手动解压，只要双击就可自解压。当然，如果你不怕麻烦的话，你也可以手动解压。但是，并不推荐手动解压，因为搞不好Git无法正常运行。具体方法可以参考该软件的readme文件。</p>
-<h2 id="初始化配置"><a href="#初始化配置" class="headerlink" title="初始化配置"></a>初始化配置</h2><p>为了减少不必要的麻烦，我们最好对Git-Portable进行一下初始化配置。</p>
-<h2 id="环境变量的设置"><a href="#环境变量的设置" class="headerlink" title="环境变量的设置"></a>环境变量的设置</h2><p>对于设置环境变量，我这里要多说一点。如果你习惯使用Git Bash的话，一般设置环境变量可以使用<code>set</code>或者<code>export</code>命令，我曾今试过<code>set</code>命令，但是并不起作用，所以我建议最好使用<code>export</code>命令来设置环境变量，如：</p>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs routeros"><span class="hljs-comment">#配置临时环境变量</span><br><span class="hljs-built_in">export</span> <span class="hljs-attribute">HOME</span>=g:\\git_portable #HOME后面的路径根据自己的实际情况修改<br></code></pre></td></tr></table></figure>
-
-<h2 id="用户信息配置"><a href="#用户信息配置" class="headerlink" title="用户信息配置"></a>用户信息配置</h2><figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs autoit"><span class="hljs-meta">#配置用户名</span><br>git config --<span class="hljs-keyword">global</span> user.name <span class="hljs-string">&quot;Your Name&quot;</span><br><br><span class="hljs-meta">#配置邮箱</span><br>git config --<span class="hljs-keyword">global</span> user.email  Your e-mail<br></code></pre></td></tr></table></figure>
-
-<h2 id="SSH配置"><a href="#SSH配置" class="headerlink" title="SSH配置"></a>SSH配置</h2><p>Git-Portable的SSH配置和桌面版Git的配置步骤基本相同，只是某些步骤不一样。</p>
-<figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs excel">ssh-keygen -<span class="hljs-built_in">t</span> <span class="hljs-symbol">ed25519</span> -C <span class="hljs-string">&quot;Your e-mail&quot;</span><br></code></pre></td></tr></table></figure>
-
-<p>ssh key推荐：<strong>rsa</strong>、<strong>ed25519</strong><br>PS：rsa密钥长度建议3072及以上</p>
-<p>不要着急地按回车，这里我们不使用默认的路径，要改成Git-ortable的安装路径，如g:\git_portable\.ssh。</p>
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p>1.<a target="_blank" rel="noopener" href="https://github.com/sheabunge/GitPortable">Git-Portable</a><br>2.<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/597447255">Git的安装与配置（详细）</a></p>
-
+                
                 
               </div>
             
@@ -298,13 +280,6 @@
             <div>
               <div class="post-metas my-3">
   
-  
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/Git/" class="print-no-link">#Git</a>
-      
-    </div>
   
 </div>
 
@@ -314,8 +289,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Git-Portable安装与配置</div>
-      <div>https://blog.ins.run/2024/03/16/Git-Portable-Configure/</div>
+      <div>一个反向代理工具——Nginx-Proxy-Manager</div>
+      <div>https://blog.ins.run/2024/03/23/一个反向代理工具——Nginx-Proxy-Manager/</div>
     </div>
     <div class="license-meta">
       
@@ -327,7 +302,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>March 16, 2024</div>
+          <div>March 23, 2024</div>
         </div>
       
       
@@ -359,18 +334,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/03/23/%E4%B8%80%E4%B8%AA%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E5%B7%A5%E5%85%B7%E2%80%94%E2%80%94Nginx-Proxy-Manager/" title="一个反向代理工具——Nginx-Proxy-Manager">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">一个反向代理工具——Nginx-Proxy-Manager</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/03/09/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2024/03/16/Git-Portable-Configure/" title="Git-Portable安装与配置">
+                        <span class="hidden-mobile">Git-Portable安装与配置</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
